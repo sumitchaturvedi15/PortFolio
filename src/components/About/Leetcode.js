@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 function Leetcode() {
   const [, setRating] = useState(null);
   // const [rating, setRating] = useState(null);
-  const username = 'sumitchaturvedi15';
+  const username = 'Akiraa15';
 
   useEffect(() => {
     const fetchRating = async () => {
@@ -24,6 +24,7 @@ function Leetcode() {
         body: JSON.stringify({ query, variables }),
       });
       const data = await response.json();
+      console.log(data,'dd')
       setRating(data.data.userContestRanking?.rating || 'N/A');
     };
 
