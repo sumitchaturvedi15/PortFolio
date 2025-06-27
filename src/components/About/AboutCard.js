@@ -11,7 +11,7 @@ function AboutCard() {
             from <span className="purple"> Shahdol, India.</span>
             <br />
             <br />
-            I’m currently pursuing a Bachelor of Technology in 
+            I’m currently pursuing a Bachelor of Engineering in 
             Electronics & Instrumentation at the Institute of Engineering & Technology, Indore (Graduating 2026).
             <br />
             <br />
@@ -19,7 +19,7 @@ function AboutCard() {
             and Codeforces to continuously sharpen my problem-solving skills.
             <br />
             <br />
-            My tech stack includes C++, JavaScript, React, Node.js, and Next.js, 
+            My tech stack includes C++, JavaScript, React, Node.js, Express 
             enabling me to build efficient, scalable, and user-friendly web applications.
             <br />
             <br />
