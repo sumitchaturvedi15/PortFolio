@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/myLogo.jpg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaCode } from "react-icons/fa";
@@ -47,10 +47,21 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
+  <Tilt>
+    <img
+      src={myImg}
+      alt="avatar"
+      className="img-fluid d-block"
+      style={{
+        width: "auto", 
+        height: "auto",
+        borderRadius: "50%",
+        objectFit: "cover",
+        margin: "0 auto",
+      }}
+    />
+  </Tilt>
+</Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">

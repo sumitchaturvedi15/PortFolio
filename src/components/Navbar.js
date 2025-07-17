@@ -9,34 +9,28 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [updateNavbar] = useState(false);
-
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar expanded={expand} fixed="top" expand="md" className="navbar">
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-        <img
-  src={logo}
-  className="img-fluid logo w-100"
-  // style={{ height: "3.4em" }}
-  alt="brand"
-/>
+        <Navbar.Brand href="/" className="d-flex align-items-center">
+            <img
+                src={logo}
+                alt="brand"
+                className="img-fluid d-block"
+                style={{
+                  height: "2.5rem",
+                  width: "2.5rem",           
+                  borderRadius: "50%",       
+                  objectFit: "cover",        
+                }}
+            />
         </Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -47,6 +41,7 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -71,9 +66,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
