@@ -2,14 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
 import bardsley from "../../Assets/Projects/Bardsley-home-page.png";
 import currencyConverter from "../../Assets/Projects/currencyConverter.png"
 import guessGame from "../../Assets/Projects/GuessGame.png"
-// import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import devLoop from "../../Assets/Projects/devloop.png";
 
 function Projects() {
   return (
@@ -26,34 +23,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={devLoop}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description=""
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description=""
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description=""
-              ghLink=""
-              demoLink=""
+              title="devLoop"
+              description="devLoop is a web application that enables developers to match and collaborate based on shared interests and skills."
+              ghLink="https://github.com/sumitchaturvedi15/devLoop"
+              demoLink="https://github.com/sumitchaturvedi15/devLoop"
             />
           </Col>
 
@@ -84,7 +59,7 @@ function Projects() {
               imgPath={currencyConverter}
               isBlog={false}
               title="Currency Converter"
-              description="Currency Converter : Currency converter that gives the exact latest currency change."
+              description="Currency converter that gives the exact latest currency change."
               ghLink="https://github.com/sumitchaturvedi15/Currency-converter"
               demoLink="https://currency-converter-devsnire.netlify.app/"
             />
