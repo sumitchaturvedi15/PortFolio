@@ -1,1 +1,1 @@
-https://sumit-chaturvedi.netlify.app/
+https://sumitchaturvedi.netlify.app/
